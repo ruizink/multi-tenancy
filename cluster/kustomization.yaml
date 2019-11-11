@@ -1,4 +1,4 @@
 bases:
   - ./common/
   - ./team1/
-  - ./flux-nginx/
+  - ./nginx-sample/

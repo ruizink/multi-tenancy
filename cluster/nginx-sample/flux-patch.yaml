@@ -14,8 +14,8 @@ spec:
             - --git-poll-interval=1m
             - --sync-interval=1m
             - --ssh-keygen-dir=/var/fluxd/keygen
-            - --k8s-allow-namespace=flux-nginx
-            - --git-url=git@github.com:ruizink/flux-nginx.git
+            - --k8s-allow-namespace=nginx-sample
+            - --git-url=git@github.com:ruizink/nginx-sample.git
             - --git-branch=master
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
@@ -25,4 +25,4 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: flux
-    namespace: flux-nginx
+    namespace: nginx-sample

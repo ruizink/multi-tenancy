@@ -1,4 +1,4 @@
-namespace: flux-nginx
+namespace: nginx-sample
 resources:
   - namespace.yaml
   - rbac.yaml
